@@ -1,0 +1,45 @@
+name: motionvec
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy=1.24
+  - matplotlib=3.6
+  - scipy=1.10
+  - scikit-image=0.19
+  - networkx=3.1
+  - pillow=9.4
+  - tqdm=4.65
+  - pip:
+    - torch==2.0.1
+    - torchvision==0.15.2
+    - kornia==0.6.12
+    - opencv-python-headless>=4.6
+    - pymatting
+    - pyefd
+    - drawsvg
+    - easing-functions
+    - pycryptodome
+    - imgaug
+    - tqdm
+    - scikit-learn
+    - pytest
+    - matplotlib
+    - seaborn
+    - jupyter
+    - json
+    - datetime
+    - PIL
+    
+
+# Notes:
+# - This file pins Python to 3.8 and requests torch==2.0.1 per this project's README.
+# - If you have an NVIDIA GPU and CUDA 12.0 installed, prefer installing the CUDA-enabled PyTorch
+#   using the conda packages from the PyTorch + NVIDIA channels instead of the pip wheel above;
+#   example (after creating this env without torch):
+#     conda install pytorch==2.0.1 torchvision==0.15.2 pytorch-cuda=12.0 -c pytorch -c nvidia
+# - Adjust versions if you need a different CUDA toolchain. See README.md and RAFT/README.md for RAFT model requirements.
