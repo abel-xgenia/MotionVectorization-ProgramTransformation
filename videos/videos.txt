@@ -1,5 +1,3 @@
 # LIST OF VIDEOS TO PROCESS
 # To skip processing a video, comment out the line like this.
-demo.mp4
-giftbox1.mp4
-shapes38.mp4
+motionshort.mp4
