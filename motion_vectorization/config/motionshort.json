@@ -36,7 +36,7 @@
     "n_steps": 50,
     "p_weight": 0.01,
     "blur_kernel": 3,
-    "use_gpu": true,
+    "use_gpu": false,
     "bleed": 50,
     "use_k": true,
     "use_r": true,
@@ -52,4 +52,5 @@
   
     "verbose": true
   }
+
   
